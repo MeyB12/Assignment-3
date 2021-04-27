@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Assignment 3</title>
+            <link rel="stylesheet" tyep="text/css" href="style3.css" />
+        </head>
+
+        <body>
+           <form name="infoForm" onsubmit="return false">
+                <fieldset id="custInfo">
+                    <legend>Customer Information</legend>
+
+                    <label for="custName">Name:</label>
+                    <input name="custName" id="custName" placeholder="" type="text" />
+                    <br>
+
+                    <label for="city">City:</label>
+                    <input name="city" id="city" value="" type="text" />
+                    <br>
+
+                    <label for="paymentType">Payment Preference</label>
+                    <select name="paymentType" id="paymentType" size="1">
+                        <option value="Cash" selected="selected">Cash</option>
+                        <option value="VISA or MC">VISA or MC</option>
+                        <option value="Debit">Debit</option>
+                        <br>
+                    </select>
+                    <br>
+
+                    <input type="submit" value="Submit" onclick="formSubmitEvent()">
+
+                </fieldset>
+        </form>
+
+        <section id="attachTo">
+
+            <div id="infoHere" class="last">
+            <h1>My Customers</h1>
+
+                <ul id="printOn"></ul>
+
+            </div>
+        </section>
+        <script type="text/javascript" src="js3.js"></script>
+        </body>
+    </html>
